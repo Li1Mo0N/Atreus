@@ -1,0 +1,18 @@
+server:
+  http:
+    addr: 0.0.0.0:8000
+    timeout: 1s
+  grpc:
+    addr: 0.0.0.0:9000
+    timeout: 1s
+data:
+  mysql:
+    driver: mysql
+    dsn: "root:wdsr19980103@tcp(127.0.0.1:3306)/atreus"
+  redis:
+    comment_db: 1
+    addr: 127.0.0.1:6379
+    password: ""
+    read_timeout: 0.2s
+    write_timeout: 0.2s
+    TTL: 1000
